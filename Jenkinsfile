@@ -1,4 +1,4 @@
-node('kubernetes') {
+node('master') {
 checkout scm
 stage('build') {
     withMaven(jdk: "JDK8", maven: 'maven_3.3.9') {
